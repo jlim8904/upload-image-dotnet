@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Upload Image";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.ImageBase64) && !string.IsNullOrEmpty(ViewBag.FileName))
+{
+    <div class="img">
+        <img src="@ViewBag.ImageBase64" alt="Uploaded Image" class="img-thumbnail" />
+    </div>
+    <p>File Name: @ViewBag.FileName</p>
+    <p>Base64:</p>
+    <p class="base64">@ViewBag.ImageBase64</p>
+}
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadImage" >
+    <div class="img-upload">
+        <h5>File</h5>
+        <div class="form-group">
+            <input type="file" name="image" id="image" class="form-control" accept="image/*" required>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadBase64" >
+    <div class="img-upload">
+        <h5>Base64</h5>
+        <div class="form-group">
+            <textarea name="Base64" id="Base64" class="form-control" placeholder="Base64" rows="10" required></textarea>
+            <input type="text" name="Filename" id="Filename" class="form-control" placeholder="Filename">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
