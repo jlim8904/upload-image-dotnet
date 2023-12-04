@@ -1,19 +1,17 @@
-﻿using System.IO;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Upload.Models;
-using System.Text.RegularExpressions;
+using PaddleOCRSharp;
 
 namespace Upload.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
     private readonly IWebHostEnvironment _webHostEnvironment;
+    PaddleOCREngine? engine = null;
 
-    public HomeController(ILogger<HomeController> logger, IWebHostEnvironment webHostEnvironment)
+    public HomeController(IWebHostEnvironment webHostEnvironment)
     {
-        _logger = logger;
         _webHostEnvironment = webHostEnvironment;
     }
 
@@ -23,46 +21,47 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> UploadImage()
+    public IActionResult UploadImage()
     {
         var file = Request.Form.Files[0];
 
         if (file.Length > 0)
         {
+            engine ??= new PaddleOCREngine(null, new OCRParameter());
             var fileName = Path.GetFileName(file.FileName);
             ViewBag.FileName = file.FileName;
             string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
-            var fileNamePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{fileNameWithoutExtension}.txt");
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
             var fileBase64Path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{fileNameWithoutExtension}_base64.txt");
 
-            System.IO.File.WriteAllText(fileNamePath, fileName);
-        
-            using (var ms = new MemoryStream())
-            {
-                await file.CopyToAsync(ms);
-                var imageBytes = ms.ToArray();
-                var base64String = Convert.ToBase64String(imageBytes);
-                System.IO.File.WriteAllText(fileBase64Path, base64String);
 
-                ViewBag.ImageBase64 = $"data:image/png;base64,{base64String}";
-            }
+            using var ms = new MemoryStream();
+            file.CopyTo(ms);
+            var imageBytes = ms.ToArray();
+            var base64String = Convert.ToBase64String(imageBytes);
+            System.IO.File.WriteAllText(fileBase64Path, base64String);
+            System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64String));
 
-            _logger.LogInformation($"Information Image {fileName} uploaded successfully.");
+            OCRResult ocrResult = engine.DetectText(filePath);
+            ViewBag.OCRResult = ocrResult.Text;
+
+            ViewBag.ImageBase64 = $"data:image/png;base64,{base64String}";
         }
-        
+
         return View("Upload");
     }
 
     [HttpPost]
     public IActionResult UploadBase64(string base64, string fileName)
     {
-        if(string.IsNullOrEmpty(fileName))
+        engine ??= new PaddleOCREngine(null, new OCRParameter());
+        if (string.IsNullOrEmpty(fileName))
             fileName = DateTime.Now.ToString("yyyyMMddHHmmss");
-        
+
         if (base64.StartsWith("data:image"))
         {
             int commaIndex = base64.IndexOf(',');
-            
+
             if (commaIndex != -1)
             {
                 base64 = base64.Substring(commaIndex + 1);
@@ -72,10 +71,13 @@ public class HomeController : Controller
         ViewBag.ImageBase64 = $"data:image/png;base64,{base64}";
         ViewBag.FileName = $"{fileName}.jpeg";
 
-        string fileNamePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{fileName}.jpeg");
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{fileName}.jpeg");
 
-        System.IO.File.WriteAllBytes(fileNamePath, Convert.FromBase64String(base64));
-        
+        System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
+
+        OCRResult ocrResult = engine.DetectText(filePath);
+        ViewBag.OCRResult = ocrResult.Text;
+
         return View("Upload");
     }
 

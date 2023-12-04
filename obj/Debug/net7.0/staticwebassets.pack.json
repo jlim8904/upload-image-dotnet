@@ -13,12 +13,364 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895.png",
+      "PackagePath": "staticwebassets\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895.txt",
+      "PackagePath": "staticwebassets\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895_base64.txt",
+      "PackagePath": "staticwebassets\\images\\03D579D4-ABBD-47B8-8982-822DDDAD8895_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\1.png",
+      "PackagePath": "staticwebassets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\1.txt",
+      "PackagePath": "staticwebassets\\images\\1.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\1_base64.txt",
+      "PackagePath": "staticwebassets\\images\\1_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\1_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\1_ocr.txt"
+    },
+    {
       "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\2023-10-13 090406.txt",
       "PackagePath": "staticwebassets\\images\\2023-10-13 090406.txt"
     },
     {
       "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\2023-10-13 090406_base64.txt",
       "PackagePath": "staticwebassets\\images\\2023-10-13 090406_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231113161130.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231113161130.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231116151846.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231116151846.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090222.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090222.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090236.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090236.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090246.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090246.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090251.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090251.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090407.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090407.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090425.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090425.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090427.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090427.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090521.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090521.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090529.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090529.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090556.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090556.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090603.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090603.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090610.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090610.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090613.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090613.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090619.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090619.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090627.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090627.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090629.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090629.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204090720.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204090720.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095909.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204095909.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095909_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204095909_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095912.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204095912.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095912_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204095912_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095922.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204095922.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095944.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204095944.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095944_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204095944_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095950.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204095950.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204095950_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204095950_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100000.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100000.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100000_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204100000_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100056.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100056.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100442.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100442.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100459.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100459.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100459_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204100459_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100512.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100512.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100649.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100649.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100649_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\20231204100649_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204100734.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204100734.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204101057.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204101057.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204101106.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204101106.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204101910.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204101910.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204101924.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204101924.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204131515.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204131515.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\20231204131529.jpeg",
+      "PackagePath": "staticwebassets\\images\\20231204131529.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\5724.png",
+      "PackagePath": "staticwebassets\\images\\5724.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\5724.txt",
+      "PackagePath": "staticwebassets\\images\\5724.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\5724_base64.txt",
+      "PackagePath": "staticwebassets\\images\\5724_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8342.jpg",
+      "PackagePath": "staticwebassets\\images\\8342.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8342.txt",
+      "PackagePath": "staticwebassets\\images\\8342.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8342_base64.txt",
+      "PackagePath": "staticwebassets\\images\\8342_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8403.png",
+      "PackagePath": "staticwebassets\\images\\8403.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8403.txt",
+      "PackagePath": "staticwebassets\\images\\8403.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8403_base64.txt",
+      "PackagePath": "staticwebassets\\images\\8403_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist.png",
+      "PackagePath": "staticwebassets\\images\\Code Assist.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist.txt",
+      "PackagePath": "staticwebassets\\images\\Code Assist.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist_base64.txt",
+      "PackagePath": "staticwebassets\\images\\Code Assist_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S.jpg",
+      "PackagePath": "staticwebassets\\images\\S.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S.txt",
+      "PackagePath": "staticwebassets\\images\\S.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S4.jpg",
+      "PackagePath": "staticwebassets\\images\\S4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S4.txt",
+      "PackagePath": "staticwebassets\\images\\S4.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S4_base64.txt",
+      "PackagePath": "staticwebassets\\images\\S4_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S5.png",
+      "PackagePath": "staticwebassets\\images\\S5.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S5.txt",
+      "PackagePath": "staticwebassets\\images\\S5.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S5_base64.txt",
+      "PackagePath": "staticwebassets\\images\\S5_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S8.png",
+      "PackagePath": "staticwebassets\\images\\S8.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S8.txt",
+      "PackagePath": "staticwebassets\\images\\S8.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S8_base64.txt",
+      "PackagePath": "staticwebassets\\images\\S8_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S9.jpg",
+      "PackagePath": "staticwebassets\\images\\S9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S9.txt",
+      "PackagePath": "staticwebassets\\images\\S9.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S9_base64.txt",
+      "PackagePath": "staticwebassets\\images\\S9_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\S_base64.txt",
+      "PackagePath": "staticwebassets\\images\\S_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\django-logo-4C5ECF7036-seeklogo.com.png",
+      "PackagePath": "staticwebassets\\images\\django-logo-4C5ECF7036-seeklogo.com.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\django-logo-4C5ECF7036-seeklogo.com.txt",
+      "PackagePath": "staticwebassets\\images\\django-logo-4C5ECF7036-seeklogo.com.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\django-logo-4C5ECF7036-seeklogo.com_base64.txt",
+      "PackagePath": "staticwebassets\\images\\django-logo-4C5ECF7036-seeklogo.com_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\django-logo-4C5ECF7036-seeklogo.com_ocr.txt",
+      "PackagePath": "staticwebassets\\images\\django-logo-4C5ECF7036-seeklogo.com_ocr.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\s6.jpg",
+      "PackagePath": "staticwebassets\\images\\s6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\s6.txt",
+      "PackagePath": "staticwebassets\\images\\s6.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\s6_base64.txt",
+      "PackagePath": "staticwebassets\\images\\s6_base64.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\畢業專題海報.png",
+      "PackagePath": "staticwebassets\\images\\畢業專題海報.png"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\畢業專題海報.txt",
+      "PackagePath": "staticwebassets\\images\\畢業專題海報.txt"
+    },
+    {
+      "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\畢業專題海報_base64.txt",
+      "PackagePath": "staticwebassets\\images\\畢業專題海報_base64.txt"
     },
     {
       "Id": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\js\\site.js",
