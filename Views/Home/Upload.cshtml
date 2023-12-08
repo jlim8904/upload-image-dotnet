@@ -4,29 +4,17 @@
 
 <h2>@ViewData["Title"]</h2>
 
-@if (!string.IsNullOrEmpty(ViewBag.ImageBase64) && !string.IsNullOrEmpty(ViewBag.FileName))
-{
-    <div class="img">
-        <img src="@ViewBag.ImageBase64" alt="Uploaded Image" class="img-thumbnail" />
-    </div>
-    <p>OCR Result: </p>
-    <p>@ViewBag.OCRResult</p>
-    <p>File Name: @ViewBag.FileName</p>
-    <p>Base64:</p>
-    <p class="base64">@ViewBag.ImageBase64</p>
-}
-
-<form method="post" enctype="multipart/form-data" asp-action="UploadImage" >
+<form method="post" enctype="multipart/form-data" id="imageForm" asp-action="Result">
     <div class="img-upload">
         <h5>File</h5>
         <div class="form-group">
             <input type="file" name="image" id="image" class="form-control" accept="image/*" required>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Upload</button>
+    <button type="button" class="btn btn-primary" onclick="uploadImage()">Upload</button>
 </form>
 
-<form method="post" enctype="multipart/form-data" asp-action="UploadBase64" >
+<form method="post" enctype="multipart/form-data" id="base64Form" asp-action="Result" >
     <div class="img-upload">
         <h5>Base64</h5>
         <div class="form-group">
@@ -36,3 +24,33 @@
     </div>
     <button type="submit" class="btn btn-primary">Upload</button>
 </form>
+
+<script>
+    function uploadImage() {
+        var input = document.getElementById('image');
+        var file = input.files[0];
+
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var base64String = e.target.result;
+                var form = document.getElementById('imageForm');
+
+                var hiddenInput = document.createElement('input');
+                hiddenInput.type = 'hidden';
+                hiddenInput.name = 'base64';
+                hiddenInput.value = base64String;
+
+                var filenameInput = document.createElement('input');
+                filenameInput.type = 'hidden';
+                filenameInput.name = 'filename';
+                filenameInput.value = file.name;
+
+                form.appendChild(hiddenInput);
+                form.appendChild(filenameInput);
+                form.submit();
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
