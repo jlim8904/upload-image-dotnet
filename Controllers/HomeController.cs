@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Upload.Models;
 using PaddleOCRSharp;
-using Microsoft.AspNetCore.Mvc.Routing;
 
 namespace Upload.Controllers;
 
@@ -29,7 +28,7 @@ public class HomeController : Controller
 
                 if (commaIndex != -1)
                 {
-                    base64 = base64.Substring(commaIndex + 1);
+                    base64 = base64[(commaIndex + 1)..];
                 }
             }
 

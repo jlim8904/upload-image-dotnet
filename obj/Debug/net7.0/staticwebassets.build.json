@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cqRvEZvyKmUxFtK9WbtNjJM5nqP+XeQgOgTRSMXPXHU=",
+  "Hash": "meUV12CK9qpsT+TL9+/wfcsr3AeAn7tfSVHepVU6AQs=",
   "Source": "Upload",
   "BasePath": "_content/Upload",
   "Mode": "Default",
@@ -1683,6 +1683,23 @@
       "OriginalItemSpec": "wwwroot\\images\\5724.txt"
     },
     {
+      "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\59sf43o3.png.jpeg",
+      "SourceId": "Upload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\",
+      "BasePath": "_content/Upload",
+      "RelativePath": "images/59sf43o3.png.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\59sf43o3.png.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\8342_base64.txt",
       "SourceId": "Upload",
       "SourceType": "Discovered",
@@ -1785,6 +1802,23 @@
       "OriginalItemSpec": "wwwroot\\images\\8403.txt"
     },
     {
+      "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\9617985C-3C56-45D7-AFC8-EF5D09E784C6.png.jpeg",
+      "SourceId": "Upload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\",
+      "BasePath": "_content/Upload",
+      "RelativePath": "images/9617985C-3C56-45D7-AFC8-EF5D09E784C6.png.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9617985C-3C56-45D7-AFC8-EF5D09E784C6.png.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist_base64.txt",
       "SourceId": "Upload",
       "SourceType": "Discovered",
@@ -1817,6 +1851,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Code Assist.png"
+    },
+    {
+      "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist.png.jpeg",
+      "SourceId": "Upload",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\",
+      "BasePath": "_content/Upload",
+      "RelativePath": "images/Code Assist.png.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Code Assist.png.jpeg"
     },
     {
       "Identity": "C:\\Users\\jlim8\\PMC\\Upload\\wwwroot\\images\\Code Assist.txt",
