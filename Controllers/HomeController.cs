@@ -20,9 +20,12 @@ public class HomeController : Controller
     {
         try {
             engine ??= new PaddleOCREngine(null, new OCRParameter());
+
+            // Set filname as datetime now if filname is null.
             if (string.IsNullOrEmpty(fileName))
                 fileName = DateTime.Now.ToString("yyyyMMddHHmmss");
 
+            // Unified base64 format
             if (base64.StartsWith("data:image"))
             {
                 int commaIndex = base64.IndexOf(',');
@@ -32,6 +35,8 @@ public class HomeController : Controller
                     base64 = base64[(commaIndex + 1)..];
                 }
             }
+
+            // Add file extension
             if (!(fileName.EndsWith(".png") || fileName.EndsWith(".jpg") || fileName.EndsWith(".jpeg")))
                 fileName = $"{fileName}.jpeg";
 
@@ -42,6 +47,7 @@ public class HomeController : Controller
 
             System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
 
+            // OCR Detect
             OCRResult ocrResult = engine.DetectTextBase64(base64);
             JArray jsonArray = JArray.Parse(ocrResult.JsonText);
             List<string> results = new();
