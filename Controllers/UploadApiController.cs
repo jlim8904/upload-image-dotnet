@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Upload.Models;
 using PaddleOCRSharp;
+using Newtonsoft.Json.Linq;
 
 namespace Upload.Controllers;
 
@@ -56,7 +57,16 @@ public class UploadApiController : Controller
             System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
             engine ??= new PaddleOCREngine(null, new OCRParameter());
             OCRResult ocrResult = engine.DetectTextBase64(base64);
-            result.OCRResult = ocrResult.Text;
+            JArray jsonArray = JArray.Parse(ocrResult.JsonText);
+            List<string> results = new();
+            foreach (JObject jsonObject in jsonArray)
+            {
+                if (jsonObject.TryGetValue("Text", out JToken valueToken))
+                {
+                    results.Add(valueToken.ToString());
+                }
+            }
+            result.OCRResult = results;
         }
         catch (Exception)
         {

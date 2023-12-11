@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Upload.Models;
 using PaddleOCRSharp;
+using Newtonsoft.Json.Linq;
 
 namespace Upload.Controllers;
 
@@ -42,7 +43,16 @@ public class HomeController : Controller
             System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
 
             OCRResult ocrResult = engine.DetectTextBase64(base64);
-            ViewBag.OCRResult = ocrResult.Text;
+            JArray jsonArray = JArray.Parse(ocrResult.JsonText);
+            List<string> results = new();
+            foreach (JObject jsonObject in jsonArray)
+            {
+                if (jsonObject.TryGetValue("Text", out JToken valueToken))
+                {
+                    results.Add(valueToken.ToString());
+                }
+            }
+            ViewBag.OCRResult = string.Join("<br/>", results.ToArray());
             return View();
         }
         catch (Exception)

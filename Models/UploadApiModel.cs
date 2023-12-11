@@ -9,6 +9,6 @@ namespace Upload.Models
 
     public class Result
     {
-        public string? OCRResult { get; set; }
+        public List<string>? OCRResult { get; set; }
     }
 }
