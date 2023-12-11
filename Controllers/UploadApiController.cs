@@ -28,6 +28,7 @@ public class UploadApiController : Controller
                 using MemoryStream ms = new();
                 imgFile.Files.CopyTo(ms);
                 base64 = Convert.ToBase64String(ms.ToArray());
+                imgFile.ImgName = imgFile.Files.FileName;
             }
             else if (!string.IsNullOrEmpty(imgFile.Base64))
             {
@@ -47,9 +48,11 @@ public class UploadApiController : Controller
             }
             else
             {
-                throw new Exception("No Image Found!");
+                throw new Exception("Image Not Found!");
             }
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{imgFile.ImgName}.jpeg");
+            if (!(imgFile.ImgName.EndsWith(".png") || imgFile.ImgName.EndsWith(".jpg") || imgFile.ImgName.EndsWith(".jpeg")))
+                imgFile.ImgName = $"{imgFile.ImgName}.jpeg";
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgFile.ImgName);
             System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
             engine ??= new PaddleOCREngine(null, new OCRParameter());
             OCRResult ocrResult = engine.DetectTextBase64(base64);

@@ -31,11 +31,13 @@ public class HomeController : Controller
                     base64 = base64[(commaIndex + 1)..];
                 }
             }
+            if (!(fileName.EndsWith(".png") || fileName.EndsWith(".jpg") || fileName.EndsWith(".jpeg")))
+                fileName = $"{fileName}.jpeg";
 
             ViewBag.ImageBase64 = $"data:image/png;base64,{base64}";
-            ViewBag.FileName = $"{fileName}.jpeg";
+            ViewBag.FileName = fileName;
 
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", $"{fileName}.jpeg");
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", fileName);
 
             System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64));
 
